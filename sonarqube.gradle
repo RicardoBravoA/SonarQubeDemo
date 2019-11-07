@@ -1,0 +1,22 @@
+sonarqube {
+    //noinspection GroovyAssignabilityCheck
+    properties {
+
+        property "sonar.projectName", "SonarQubeDemo"
+        property "sonar.projectKey", "sonar-qube-demo"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "99b54ed563914538eb76f0178724405d1e3e57a9"
+        //property 'sonar.scm.provider', "git"
+        property "sonar.language","kotlin"
+        property "sonar.sourceEncoding", "UTF-8"
+
+        property "sonar.sources", "src/main/java"
+
+        // Analyze tests classes
+        if (project.plugins.hasPlugin('com.android.application')) {
+            property "sonar.tests", "src/test/java, src/androidTest/java"
+        } else {
+            property "sonar.tests", "src/test/java"
+        }
+    }
+}
