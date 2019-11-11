@@ -5,7 +5,7 @@ sonarqube {
         property "sonar.projectName", "SonarQubeDemo"
         property "sonar.projectKey", "sonar-qube-demo"
         property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "99b54ed563914538eb76f0178724405d1e3e57a9"
+        property "sonar.login", "b4fae968dbb2ee6d558fd8028e45cdd11976b1d4"
         //property 'sonar.scm.provider', "git"
         property "sonar.language","kotlin"
         property "sonar.sourceEncoding", "UTF-8"

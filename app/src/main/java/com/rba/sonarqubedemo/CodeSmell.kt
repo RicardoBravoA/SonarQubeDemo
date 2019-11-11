@@ -11,7 +11,9 @@ class CodeSmell {
                             if(1>0){
                                 if(1>0){
                                     if(1>0){
-                                        print("1>0")
+                                        if(1>0){
+                                            print("1>0")
+                                        }
                                     }
                                 }
                             }
