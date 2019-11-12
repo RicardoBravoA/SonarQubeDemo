@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: "org.sonarqube"
-apply from: '../sonarqube.gradle'
 
 android {
     compileSdkVersion 29
@@ -33,4 +32,27 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
+
+sonarqube {
+    //noinspection GroovyAssignabilityCheck
+    properties {
+
+        property "sonar.projectName", "SonarQubeDemo"
+        property "sonar.projectKey", "sonar-qube-demo"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "b4fae968dbb2ee6d558fd8028e45cdd11976b1d4"
+        //property 'sonar.scm.provider', "git"
+        property "sonar.language","kotlin"
+        property "sonar.sourceEncoding", "UTF-8"
+
+        property "sonar.sources", "src/main/java"
+
+        // Analyze tests classes
+        if (project.plugins.hasPlugin('com.android.application')) {
+            property "sonar.tests", "src/test/java, src/androidTest/java"
+        } else {
+            property "sonar.tests", "src/test/java"
+        }
+    }
 }

@@ -1,6 +1,6 @@
 package com.rba.sonarqubedemo
 
-class CodeSmell2 {
+class CodeSmell6 {
 
     fun smell_2() {
         if (2 > 0) {
