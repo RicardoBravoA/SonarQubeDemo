@@ -10,19 +10,20 @@
     <version>1.0.0</version>
 
     <build>
-        <plugin>
-            <configuration>
-                <sonar.projectName>SonarQubeDemo</sonar.projectName>
-                <sonar.projectKey>sonar-qube-demo</sonar.projectKey>
-                <sonar.host.url>http://localhost:9000</sonar.host.url>
-                <sonar.login>b4fae968dbb2ee6d558fd8028e45cdd11976b1d4</sonar.login>
-                <sonar.language>kotlin</sonar.language>
-                <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
-                <sonar.sources>src/main/java</sonar.sources>
-            </configuration>
-        </plugin>
+        <plugins>
+            <plugin>
+                <configuration>
+                    <sonar.projectName>SonarQubeDemo</sonar.projectName>
+                    <sonar.projectKey>sonar-qube-demo</sonar.projectKey>
+                    <sonar.host.url>http://localhost:9000</sonar.host.url>
+                    <sonar.login>b4fae968dbb2ee6d558fd8028e45cdd11976b1d4</sonar.login>
+                    <sonar.language>kotlin</sonar.language>
+                    <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
+                    <sonar.sources>src/main/java</sonar.sources>
+                </configuration>
+            </plugin>
+
+        </plugins>
     </build>
-
-
 
 </project>
