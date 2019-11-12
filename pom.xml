@@ -1,4 +1,7 @@
 <plugin>
+    <groupId>com.rba.sonarqubedemo</groupId>
+    <artifactId>sonar-qube-demo</artifactId>
+    <version>1.0.0</version>
     <configuration>
         <sonar.projectName>SonarQubeDemo</sonar.projectName>
         <sonar.projectKey>sonar-qube-demo</sonar.projectKey>
