@@ -1,6 +1,6 @@
 package com.rba.sonarqubedemo
 
-object CodeSmell3 {
+object CodeSmell4 {
 
     fun abc_def(){
         if (2 > 1) {
