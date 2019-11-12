@@ -1,7 +1,14 @@
-<plugin>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>1.0.0</modelVersion>
+
     <groupId>com.rba.sonarqubedemo</groupId>
     <artifactId>sonar-qube-demo</artifactId>
     <version>1.0.0</version>
+
     <configuration>
         <sonar.projectName>SonarQubeDemo</sonar.projectName>
         <sonar.projectKey>sonar-qube-demo</sonar.projectKey>
@@ -11,4 +18,5 @@
         <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
         <sonar.sources>src/main/java</sonar.sources>
     </configuration>
-</plugin>
+
+</project>
